@@ -1,6 +1,6 @@
-FROM php:8.1-cli-alpine3.15 AS base
+FROM php:8.1-cli-alpine3.15
 
-RUN apk add --no-cache curl git nodejs npm
+RUN apk add --no-cache curl git
 
 ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
 
