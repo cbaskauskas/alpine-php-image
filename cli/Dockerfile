@@ -8,3 +8,5 @@ RUN chmod +x /usr/local/bin/install-php-extensions && \
 
 RUN apk add --no-cache curl git nodejs npm
 RUN addgroup -g 1000 -S user && adduser -u 1000 -D user -G user
+
+CMD ["sleep", "infinity"]
